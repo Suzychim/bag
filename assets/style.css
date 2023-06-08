@@ -1,5 +1,22 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
 
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  visibility: hidden;
+}
 
+.image-container:hover .image-text {
+  visibility: visible;
+}
 
 * {
 	margin:  0px;
@@ -7,11 +24,10 @@
 	box-sizing: border-box;
 }
 
-/* adjusting fonts */
-
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+	background-color: darkgray;
 }
 
 p, li {
